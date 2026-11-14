@@ -122,11 +122,9 @@ public class RecursiveBST<Key extends Comparable<Key>, Value> {
   private int rank(Key key, Node x) {
     if (x == null) return 0;
     int cmp = key.compareTo(x.key);
-    if (cmp < 0) {
-      return rank(key, x.left);
-    } else if (cmp > 0) {
-      return 1 + rank(key, x.right) + size(x.left);
-    } else return size(x.left);
+    if (cmp < 0) return rank(key, x.left);
+    else if (cmp > 0) return 1 + rank(key, x.right) + size(x.left);
+    else return size(x.left);
   }
 
   public void deleteMin() {
@@ -135,7 +133,7 @@ public class RecursiveBST<Key extends Comparable<Key>, Value> {
 
   private Node deleteMin(Node x) {
     if (x.left == null) return x.right;
-    x.left =  deleteMin(x.left);
+    x.left = deleteMin(x.left);
     x.N = size(x.left) + size(x.right) + 1;
     return x;
   }
