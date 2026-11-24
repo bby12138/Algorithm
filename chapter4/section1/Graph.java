@@ -1,8 +1,7 @@
-package chapter4;
+package chapter4.section1;
 
 import chapter1.section3.Bag;
 
-import java.util.Iterator;
 import java.util.Scanner;
 
 public class Graph {

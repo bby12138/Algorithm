@@ -1,11 +1,11 @@
-package chapter4;
+package chapter4.section1;
 
-
-import edu.princeton.cs.algs4.Stack;
 
 import java.io.IOException;
 import java.nio.file.Path;
+import java.util.ArrayDeque;
 import java.util.Arrays;
+import java.util.Deque;
 import java.util.Scanner;
 
 
@@ -49,7 +49,7 @@ public class DepthFirstPaths {
 
   public Iterable<Integer> pathTo(int v) {
     if (!hasPathTo(v)) return null;
-    Stack<Integer> path = new Stack<>();
+    Deque<Integer> path = new ArrayDeque<>();
     for (int x = v; x != s; x = edgeTo[x])
       path.push(x);
     path.push(s);
