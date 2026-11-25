@@ -1,4 +1,4 @@
-package section2;
+package chapter3.section2;
 
 public class RecursiveBST<Key extends Comparable<Key>, Value> {
   private class Node {

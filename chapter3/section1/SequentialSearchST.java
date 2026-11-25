@@ -1,4 +1,4 @@
-package section1;
+package chapter3.section1;
 
 import java.util.Iterator;
 import java.util.NoSuchElementException;

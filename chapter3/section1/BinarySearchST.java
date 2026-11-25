@@ -1,4 +1,4 @@
-package section1;
+package chapter3.section1;
 
 public class BinarySearchST<Key extends Comparable<Key>, Value> {
   private Key[] keys;

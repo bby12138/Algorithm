@@ -1,4 +1,4 @@
-package section3;
+package chapter3.section3;
 
 public class LLRB<Key extends Comparable<Key>, Value> {
   private static final boolean RED = true;
